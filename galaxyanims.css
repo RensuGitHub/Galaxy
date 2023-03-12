@@ -1,0 +1,478 @@
+@charset "utf-8";
+
+html {
+    height: 100%;
+    top: 20%;
+    left: 30%;
+    overflow: hidden;
+    background: linear-gradient(165deg, rgba(0,0,0,1) 0%, rgba(35,50,114,1) 45%, rgba(0,0,0,1) 100%);
+    /*
+    background: radial-gradient(circle, rgba(35,50,114,1) 0%, rgba(0,0,0,1) 100%);
+    */
+}
+
+body {
+    background-color: #111111;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin: 0;
+}
+
+
+.noiseBG {
+    position: fixed;
+    top: -50%;
+    left: -50%;
+    right: -50%;
+    bottom: -50%;
+    width: 200%;
+    height: 200vh;
+    background: transparent url(noise.png) repeat 0 0;
+    background-repeat: repeat;
+    animation: bg-animation .2s infinite;
+    opacity: .5;
+}
+  
+  @keyframes bg-animation {
+      0% {transform: translate(0,0)}
+      10% {transform: translate(-5%,-5%)}
+      20% {transform: translate(-10%,5%)}
+      30% {transform: translate(5%,-10%)}
+      40% {transform: translate(-5%,15%)}
+      50% {transform: translate(-10%,5%)}
+      60% {transform: translate(15%,0)}
+      70% {transform: translate(0,10%)}
+      80% {transform: translate(-15%,0)}
+      90% {transform: translate(10%,5%)}
+      100% {transform: translate(5%,0)}
+  }
+
+h1 {
+    text-align: justify;
+    position: absolute;
+    color: lightblue;
+}
+
+.smolRock7 {
+    width: 20%;
+    height: 20%;
+    background: linear-gradient(200deg, rgba(0,0,0,1) 0%, rgba(4,4,4,1) 50%, rgba(33,46,98,1) 69%, rgba(28,40,86,1) 79%, rgba(22,31,70,1) 91%, rgba(0,0,0,1) 99%);
+    position: absolute;
+    clip-path: polygon(31% 19%, 20% 37%, 26% 59%, 42% 74%, 69% 66%, 81% 53%, 71% 30%, 53% 19%);
+    top: -7%;
+    left: 45%;
+    rotate: -2deg;
+    animation: smolRock7 10s normal infinite;
+}
+
+.smolRock6 {
+    width: 20%;
+    height: 20%;
+    background: #111111;
+    position: absolute;
+    clip-path: polygon(48% 24%, 64% 30%, 66% 52%, 52% 66%, 31% 66%, 27% 45%, 33% 34%);
+    top: 5%;
+    left: 10%;
+    rotate: -2deg;
+    animation: smolRock6 30s normal infinite;
+}
+
+.smolRock5 {
+    width: 20%;
+    height: 20%;
+    background: linear-gradient(10deg, rgba(0,0,0,1) 0%, rgba(4,4,4,1) 32%, rgba(22,31,70,1) 65%, rgba(12,17,38,1) 88%, rgba(0,0,0,1) 100%);
+    position: absolute;
+    clip-path: polygon(51% 31%, 30% 38%, 26% 53%, 41% 61%, 65% 61%, 69% 44%, 60% 35%);
+    top: 75%;
+    left: 35%;
+    rotate: -2deg;
+    animation: smolRock5 8s normal infinite;
+}
+
+.smolRock4 {
+    width: 20%;
+    height: 20%;
+    background: linear-gradient(30deg, rgba(0,0,0,1) 0%, rgba(4,4,4,1) 32%, rgba(22,31,70,1) 65%, rgba(12,17,38,1) 88%, rgba(0,0,0,1) 100%);
+    position: absolute;
+    clip-path: polygon(40% 26%, 48% 23%, 57% 28%, 64% 36%, 74% 42%, 74% 54%, 47% 52%, 30% 53%, 26% 38%);
+    top: 70%;
+    left: 40%;
+    rotate: -15deg;
+    animation: smolRock4 8s normal infinite;
+}
+
+
+.smolRock3 {
+    width: 20%;
+    height: 20%;
+    background: linear-gradient(30deg, rgba(0,0,0,1) 0%, rgba(4,4,4,1) 32%, rgba(22,31,70,1) 65%, rgba(12,17,38,1) 88%, rgba(0,0,0,1) 100%);
+    position: absolute;
+    clip-path: polygon(41% 31%, 55% 30%, 64% 38%, 67% 55%, 51% 57%, 41% 58%, 34% 44%);
+    top: 70%;
+    left: 28%;
+    animation: smolRock3 8s normal infinite;
+}
+
+
+.smolRock2 {
+    width: 20%;
+    height: 20%;
+    background: linear-gradient(30deg, rgba(0,0,0,1) 0%, rgba(4,4,4,1) 32%, rgba(22,31,70,1) 65%, rgba(12,17,38,1) 88%, rgba(0,0,0,1) 100%);
+    position: absolute;
+    clip-path: polygon(21% 27%, 41% 23%, 48% 23%, 52% 28%, 64% 50%, 62% 58%, 64% 63%, 73% 69%, 73% 77%, 56% 87%, 22% 75%, 18% 40%);
+    top: 85%;
+    left: 5%;
+    animation: smolRock2 8s normal infinite;
+}
+
+.smolRock1 {
+    width: 20%;
+    height: 20%;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(4,4,4,1) 32%, rgba(22,31,70,1) 58%, rgba(33,46,98,1) 73%, rgba(0,0,0,1) 100%);
+    position: absolute;
+    clip-path: polygon(27% 19%, 47% 19%, 56% 30%, 58% 43%, 57% 49%, 72% 57%, 78% 64%, 64% 77%, 34% 84%, 13% 53%, 14% 32%);
+    top: 30%;
+    left: 5%;
+    animation: smolRock1 8s normal infinite;
+}
+
+.Rock1 {
+    height: 73%;
+    width: 30%;
+    border-radius: 70%;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 64%, rgba(35,50,114,1) 84%, rgba(0,0,0,1) 98%);
+    position: absolute;
+    top: 18%;
+    left: -8%;
+    rotate: 0%;
+    clip-path: polygon(40% 0, 52% 18%, 61% 19%, 71% 49%, 80% 55%, 75% 78%, 55% 100%, 25% 96%, 13% 54%, 28% 11%);
+    animation: Rock1 5s normal infinite;
+}
+
+.Rock2 {
+    height: 50%;
+    width: 27%;
+    border-radius: 100%;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 64%, rgba(35,50,114,1) 84%, rgba(0,0,0,1) 98%);
+    position: absolute;
+    top: 47%;
+    left: 4%;
+    rotate: -3deg;
+    clip-path: polygon(48% 4%, 52% 2%, 55% 5%, 65% 23%, 78% 19%, 82% 19%, 84% 24%, 78% 43%, 75% 43%, 74% 57%, 74% 63%, 63% 63%, 60% 84%, 56% 85%, 44% 78%, 32% 92%, 27% 93%, 25% 87%, 20% 43%, 37% 26%);
+    animation: Rock2 5s normal infinite;
+}
+
+.Rock3 {
+    height: 40%;
+    width: 23%;
+    background: linear-gradient(80deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 72%, rgba(22,31,70,1) 90%, rgba(0,0,0,1) 100%);
+    position: absolute;
+    top: 58%;
+    left: 10%;
+    rotate: -3deg;
+    clip-path: polygon(50% 4%, 69% 18%, 86% 14%, 94% 46%, 80% 56%, 74% 84%, 54% 99%, 27% 38%);
+    animation: Rock3 5s normal infinite;
+}
+
+.Rock4 {
+    height: 40%;
+    width: 23%;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(22,31,70,1) 13%, rgba(0,0,0,1) 64%, rgba(22,31,70,1) 87%, rgba(0,0,0,1) 100%);
+    position: absolute;
+    top: 74%;
+    left: 58%;
+    rotate: 40deg;
+    clip-path: polygon(29% 12%, 44% 22%, 63% 22%, 70% 22%, 74% 28%, 79% 47%, 81% 51%, 91% 53%, 92% 60%, 83% 73%, 27% 67%, 12% 46%, 13% 25%, 13% 20%);
+    animation: Rock4 5s normal infinite; 
+}
+
+.Rock5 {
+    height: 40%;
+    width: 23%;
+    background: linear-gradient(50deg, rgba(0,0,0,1) 0%, rgba(22,31,70,1) 13%, rgba(0,0,0,1) 64%, rgba(22,31,70,1) 87%, rgba(0,0,0,1) 100%);
+    position: absolute;
+    top: 74%;
+    left: 45%;
+    rotate: 20deg;
+    clip-path: polygon(16% 48%, 16% 23%, 20% 17%, 26% 17%, 39% 13%, 44% 8%, 51% 10%, 64% 11%, 69% 12%, 73% 23%, 78% 26%, 79% 36%, 90% 50%, 89% 59%, 58% 71%, 28% 60%);
+    animation: Rock5 5s normal infinite;
+}
+
+.BigRock1 {
+    height: 95%;
+    width: 50%;
+    background: linear-gradient(50deg, rgba(0,0,0,1) 0%, rgba(22,31,70,1) 13%, rgba(0,0,0,1) 64%, rgba(22,31,70,1) 87%, rgba(0,0,0,1) 100%);
+    position: absolute;
+    top: 0%;
+    left: 62%;
+    rotate: 0deg;
+    clip-path: polygon(44% 1%, 32% 8%, 23% 41%, 29% 64%, 50% 76%, 58% 86%, 64% 94%, 73% 100%, 97% 69%, 87% 35%, 73% 6%, 62% 17%, 53% 8%);
+    animation: BigRock1 5s normal infinite;
+}
+
+.BigRock2 {
+    height: 115%;
+    width: 60%;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(22,31,70,1) 18%, rgba(0,0,0,1) 39%, rgba(0,0,0,1) 67%, rgba(22,31,70,1) 87%, rgba(0,0,0,1) 100%);
+    position: absolute;
+    top: -10%;
+    left: 48%;
+    rotate: -12deg;
+    clip-path: polygon(48% 2%, 40% 16%, 34% 21%, 33% 26%, 25% 47%, 21% 54%, 23% 61%, 31% 81%, 32% 85%, 37% 86%, 48% 99%, 61% 83%, 62% 77%, 69% 56%, 60% 13%);
+    animation: BigRock2 5s normal infinite;
+}
+
+.CenterGalaxy {
+    height: 7%;
+    width: 20%;
+    position: absolute;
+    top: 37%;
+    left: 37%;
+    border-radius: 50%;
+    border-left: transparent;
+    rotate: -15deg;
+    opacity: 0.20;
+    animation: CenterGalaxy 3s infinite;
+}
+
+.OuterCenterGalaxy {
+    height: 7%;
+    width: 20%;
+    background-color: #3850bb;
+    position: absolute;
+    top: 37%;
+    left: 37%;
+    border-radius: 50%;
+    rotate: -15deg;
+    opacity: 0.20;
+    animation: OuterCenterGalaxy 3s infinite;
+}
+
+.GlowAround1 {
+    height: 6%;
+    width: 12%;
+    background-color: #ffcda5;
+    position: absolute;
+    border-radius: 50%;
+    rotate: -12deg;
+    box-shadow:
+        0 0 60px 30px #fff,
+        0 0 110px 90px #f0f,
+        0 0 150px 120px #0ff;
+    top: 37%;
+    left: 40%;
+    opacity: 0.60;
+    
+}
+
+.aroundtheGalaxy1 {
+    height: 55%;
+    width: 80%;
+    top: 15%;
+    left: 10%;
+    rotate: -192deg;
+    position: absolute;
+    border-radius: 50%;
+    box-shadow:50px 0px 50px 0px #3850bb;
+    opacity: 0.5;
+}
+
+.galaxy {
+    height: 90%;
+    width: 60%; 
+    top: -10%;
+    left: 10%;
+    rotate: 23deg;
+    background-image: url("galaxy.png");
+    background-size: cover;
+    position: absolute;
+    opacity: .50;
+}
+
+/***================ ANIMATIONS =================== ***/
+
+@keyframes smolRock1{
+    0%{width: 20%;
+        height: 20%;
+        background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(4,4,4,1) 32%, rgba(22,31,70,1) 65%, rgba(12,17,38,1) 88%, rgba(0,0,0,1) 100%);
+        position: absolute;
+        clip-path: polygon(27% 19%, 47% 19%, 56% 30%, 58% 43%, 57% 49%, 72% 57%, 78% 64%, 64% 77%, 34% 84%, 13% 53%, 14% 32%);
+        top: 30%;
+        left: 5%;}
+    50%{width: 20%;
+        height: 20%;
+        background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(4,4,4,1) 32%, rgba(22,31,70,1) 65%, rgba(12,17,38,1) 88%, rgba(0,0,0,1) 100%);
+        position: absolute;
+        clip-path: polygon(27% 19%, 47% 19%, 56% 30%, 58% 43%, 57% 49%, 72% 57%, 78% 64%, 64% 77%, 34% 84%, 13% 53%, 14% 32%);
+        top: 30%;
+        left: 5%;
+        rotate: 40deg;}
+}
+
+@keyframes smolRock2 {
+    0%{width: 20%;
+        height: 20%;
+        background: linear-gradient(30deg, rgba(0,0,0,1) 0%, rgba(4,4,4,1) 32%, rgba(22,31,70,1) 65%, rgba(12,17,38,1) 88%, rgba(0,0,0,1) 100%);
+        position: absolute;
+        clip-path: polygon(21% 27%, 41% 23%, 48% 23%, 52% 28%, 64% 50%, 62% 58%, 64% 63%, 73% 69%, 73% 77%, 56% 87%, 22% 75%, 18% 40%);
+        top: 85%;
+        left: 5%;}
+    50%{width: 20%;
+        height: 20%;
+        background: linear-gradient(30deg, rgba(0,0,0,1) 0%, rgba(4,4,4,1) 32%, rgba(22,31,70,1) 65%, rgba(12,17,38,1) 88%, rgba(0,0,0,1) 100%);
+        position: absolute;
+        clip-path: polygon(21% 27%, 41% 23%, 48% 23%, 52% 28%, 64% 50%, 62% 58%, 64% 63%, 73% 69%, 73% 77%, 56% 87%, 22% 75%, 18% 40%);
+        top: 79%;
+        left: 2%;}
+
+}
+
+@keyframes smolRock3 {
+    0%{width: 20%;
+        height: 20%;
+        background: linear-gradient(30deg, rgba(0,0,0,1) 0%, rgba(4,4,4,1) 32%, rgba(22,31,70,1) 65%, rgba(12,17,38,1) 88%, rgba(0,0,0,1) 100%);
+        position: absolute;
+        clip-path: polygon(41% 31%, 55% 30%, 64% 38%, 67% 55%, 51% 57%, 41% 58%, 34% 44%);
+        top: 70%;
+        left: 28%;}
+    50%{width: 20%;
+        height: 20%;
+        background: linear-gradient(30deg, rgba(0,0,0,1) 0%, rgba(4,4,4,1) 32%, rgba(22,31,70,1) 65%, rgba(12,17,38,1) 88%, rgba(0,0,0,1) 100%);
+        position: absolute;
+        clip-path: polygon(41% 31%, 55% 30%, 64% 38%, 67% 55%, 51% 57%, 41% 58%, 34% 44%);
+        top: 70%;
+        left: 28%;
+        rotate: 20deg}
+}
+
+@keyframes smolRock4 {
+    0%{width: 20%;
+        height: 20%;
+        background: linear-gradient(30deg, rgba(0,0,0,1) 0%, rgba(4,4,4,1) 32%, rgba(22,31,70,1) 65%, rgba(12,17,38,1) 88%, rgba(0,0,0,1) 100%);
+        position: absolute;
+        clip-path: polygon(40% 26%, 48% 23%, 57% 28%, 64% 36%, 74% 42%, 74% 54%, 47% 52%, 30% 53%, 26% 38%);
+        top: 70%;
+        left: 40%;
+        rotate: -15deg;}
+    50%{width: 20%;
+        height: 20%;
+        background: linear-gradient(30deg, rgba(0,0,0,1) 0%, rgba(4,4,4,1) 32%, rgba(22,31,70,1) 65%, rgba(12,17,38,1) 88%, rgba(0,0,0,1) 100%);
+        position: absolute;
+        clip-path: polygon(40% 26%, 48% 23%, 57% 28%, 64% 36%, 74% 42%, 74% 54%, 47% 52%, 30% 53%, 26% 38%);
+        top: 71%;
+        left: 42%;
+        rotate: -30deg;}
+}
+
+@keyframes smolRock5 {
+    0%{width: 20%;
+        height: 20%;
+        background: linear-gradient(10deg, rgba(0,0,0,1) 0%, rgba(4,4,4,1) 32%, rgba(22,31,70,1) 65%, rgba(12,17,38,1) 88%, rgba(0,0,0,1) 100%);
+        position: absolute;
+        clip-path: polygon(51% 31%, 30% 38%, 26% 53%, 41% 61%, 65% 61%, 69% 44%, 60% 35%);
+        top: 75%;
+        left: 35%;
+        rotate: -2deg;}
+    50%{width: 20%;
+        height: 20%;
+        background: linear-gradient(10deg, rgba(0,0,0,1) 0%, rgba(4,4,4,1) 32%, rgba(22,31,70,1) 65%, rgba(12,17,38,1) 88%, rgba(0,0,0,1) 100%);
+        position: absolute;
+        clip-path: polygon(51% 31%, 30% 38%, 26% 53%, 41% 61%, 65% 61%, 69% 44%, 60% 35%);
+        top: 78%;
+        left: 33%;
+        rotate: 5deg;}
+}
+
+@keyframes smolRock6 {
+    0%{width: 20%;
+        height: 20%;
+        background: #111111;
+        position: absolute;
+        clip-path: polygon(48% 24%, 64% 30%, 66% 52%, 52% 66%, 31% 66%, 27% 45%, 33% 34%);
+        top: 5%;
+        left: 10%;
+        rotate: -2deg;}
+    50%{width: 20%;
+        height: 20%;
+        background: #111111;
+        position: absolute;
+        clip-path: polygon(48% 24%, 64% 30%, 66% 52%, 52% 66%, 31% 66%, 27% 45%, 33% 34%);
+        top: 5%;
+        left: 10%;
+        rotate: 360deg;}
+}
+
+@keyframes smolRock7 {
+    0%{width: 20%;
+        height: 20%;
+        background: linear-gradient(200deg, rgba(0,0,0,1) 0%, rgba(4,4,4,1) 50%, rgba(33,46,98,1) 69%, rgba(28,40,86,1) 79%, rgba(22,31,70,1) 91%, rgba(0,0,0,1) 99%);
+        position: absolute;
+        clip-path: polygon(31% 19%, 20% 37%, 26% 59%, 42% 74%, 69% 66%, 81% 53%, 71% 30%, 53% 19%);
+        top: -7%;
+        left: 45%;
+        rotate: -2deg;}
+    50%{width: 20%;
+        height: 20%;
+        background: linear-gradient(200deg, rgba(0,0,0,1) 0%, rgba(4,4,4,1) 50%, rgba(33,46,98,1) 69%, rgba(28,40,86,1) 79%, rgba(22,31,70,1) 91%, rgba(0,0,0,1) 99%);
+        position: absolute;
+        clip-path: polygon(31% 19%, 20% 37%, 26% 59%, 42% 74%, 69% 66%, 81% 53%, 71% 30%, 53% 19%);
+        top: -7%;
+        left: 45%;
+        rotate: -10deg;}
+}
+
+@keyframes Rock1 {
+    0%{height: 73%;width: 30%;border-radius: 70%;background-color: dimgrey;position: absolute;top: 18%;left: -8%;rotate: 0;
+    clip-path: polygon(40% 0, 52% 18%, 61% 19%, 71% 49%, 80% 55%, 75% 78%, 55% 100%, 25% 96%, 13% 54%, 28% 11%);}
+    50%{height: 73%;width: 30%;border-radius: 70%;background-color: dimgrey;position: absolute;top: 20%;left: -8%;rotate: 2deg;
+    clip-path: polygon(40% 0, 52% 18%, 61% 19%, 71% 49%, 80% 55%, 75% 78%, 55% 100%, 25% 96%, 13% 54%, 28% 11%);}
+}
+
+@keyframes Rock2 {
+    0%{height: 50%;width: 27%;border-radius: 100%;background-color:gray;position: absolute;top: 47%;left: 4%;rotate: -3deg;
+    clip-path: polygon(48% 4%, 52% 2%, 55% 5%, 65% 23%, 78% 19%, 82% 19%, 84% 24%, 78% 43%, 75% 43%, 74% 57%, 74% 63%, 63% 63%, 60% 84%, 56% 85%, 44% 78%, 32% 92%, 27% 93%, 25% 87%, 20% 43%, 37% 26%);}
+    50%{height: 50%;width: 27%;border-radius: 100%;background-color:gray;position: absolute;top: 47.5%;left: 3%;rotate: -7deg;
+    clip-path: polygon(48% 4%, 52% 2%, 55% 5%, 65% 23%, 78% 19%, 82% 19%, 84% 24%, 78% 43%, 75% 43%, 74% 57%, 74% 63%, 63% 63%, 60% 84%, 56% 85%, 44% 78%, 32% 92%, 27% 93%, 25% 87%, 20% 43%, 37% 26%);}
+}
+
+@keyframes Rock3 {
+    0%{height: 40%;width: 23%;background-color:darkgrey;position: absolute;top: 58%;left: 10%;rotate: -3deg;
+    clip-path: polygon(50% 4%, 69% 18%, 86% 14%, 94% 46%, 80% 56%, 74% 84%, 54% 99%, 27% 38%);}
+    50%{height: 40%;width: 23%;background-color:darkgrey;position: absolute;top: 61%;left: 10%;rotate: -1deg;
+    clip-path: polygon(50% 4%, 69% 18%, 86% 14%, 94% 46%, 80% 56%, 74% 84%, 54% 99%, 27% 38%);}
+}
+
+
+@keyframes Rock4 {
+    0%{height: 40%;width: 23%;background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(22,31,70,1) 13%, rgba(0,0,0,1) 64%, rgba(22,31,70,1) 87%, rgba(0,0,0,1) 100%);position: absolute;top: 74%;left: 58%;rotate: 40deg;
+    clip-path: polygon(29% 12%, 44% 22%, 63% 22%, 70% 22%, 74% 28%, 79% 47%, 81% 51%, 91% 53%, 92% 60%, 83% 73%, 27% 67%, 12% 46%, 13% 25%, 13% 20%);}
+    50%{height: 40%;width: 23%;background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(22,31,70,1) 13%, rgba(0,0,0,1) 64%, rgba(22,31,70,1) 87%, rgba(0,0,0,1) 100%);position: absolute;top: 72%;left: 58%;rotate: 35deg;
+    clip-path: polygon(29% 12%, 44% 22%, 63% 22%, 70% 22%, 74% 28%, 79% 47%, 81% 51%, 91% 53%, 92% 60%, 83% 73%, 27% 67%, 12% 46%, 13% 25%, 13% 20%);}
+}
+
+@keyframes Rock5 {
+    0%{height: 40%;width: 23%;background: linear-gradient(50deg, rgba(0,0,0,1) 0%, rgba(22,31,70,1) 13%, rgba(0,0,0,1) 64%, rgba(22,31,70,1) 87%, rgba(0,0,0,1) 100%);position: absolute;top: 74%;left: 45%;rotate: 20deg;
+    clip-path: polygon(16% 48%, 16% 23%, 20% 17%, 26% 17%, 39% 13%, 44% 8%, 51% 10%, 64% 11%, 69% 12%, 73% 23%, 78% 26%, 79% 36%, 90% 50%, 89% 59%, 58% 71%, 28% 60%);}
+    50%{height: 40%;width: 23%;background: linear-gradient(50deg, rgba(0,0,0,1) 0%, rgba(22,31,70,1) 13%, rgba(0,0,0,1) 64%, rgba(22,31,70,1) 87%, rgba(0,0,0,1) 100%);position: absolute;top: 76%;left: 45%;rotate: 22deg;
+    clip-path: polygon(16% 48%, 16% 23%, 20% 17%, 26% 17%, 39% 13%, 44% 8%, 51% 10%, 64% 11%, 69% 12%, 73% 23%, 78% 26%, 79% 36%, 90% 50%, 89% 59%, 58% 71%, 28% 60%);}
+}
+
+@keyframes BigRock1 {
+    0%{height: 95%;width: 50%;background: linear-gradient(50deg, rgba(0,0,0,1) 0%, rgba(22,31,70,1) 13%, rgba(0,0,0,1) 64%, rgba(22,31,70,1) 87%, rgba(0,0,0,1) 100%);position: absolute;top: 0%;left: 62%;rotate: 0deg;clip-path: polygon(44% 1%, 32% 8%, 23% 41%, 29% 64%, 50% 76%, 58% 86%, 64% 94%, 73% 100%, 97% 69%, 87% 35%, 73% 6%, 62% 17%, 53% 8%);}
+    50%{height: 95%;width: 50%;background: linear-gradient(50deg, rgba(0,0,0,1) 0%, rgba(22,31,70,1) 13%, rgba(0,0,0,1) 64%, rgba(22,31,70,1) 87%, rgba(0,0,0,1) 100%);position: absolute;top: 5%;left: 62%;rotate: 0deg;clip-path: polygon(44% 1%, 32% 8%, 23% 41%, 29% 64%, 50% 76%, 58% 86%, 64% 94%, 73% 100%, 97% 69%, 87% 35%, 73% 6%, 62% 17%, 53% 8%);}
+}
+
+@keyframes BigRock2 {
+    0%{height: 115%;width: 60%;background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(22,31,70,1) 18%, rgba(0,0,0,1) 39%, rgba(0,0,0,1) 67%, rgba(22,31,70,1) 87%, rgba(0,0,0,1) 100%);position: absolute;top: -10%;left: 48%;rotate: -12deg;clip-path: polygon(48% 2%, 40% 16%, 34% 21%, 33% 26%, 25% 47%, 21% 54%, 23% 61%, 31% 81%, 32% 85%, 37% 86%, 48% 99%, 61% 83%, 62% 77%, 69% 56%, 60% 13%);}
+    50%{height: 115%;width: 60%;background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(22,31,70,1) 18%, rgba(0,0,0,1) 39%, rgba(0,0,0,1) 67%, rgba(22,31,70,1) 87%, rgba(0,0,0,1) 100%);position: absolute;top: -5%;left: 48%;rotate: -12deg;clip-path: polygon(48% 2%, 40% 16%, 34% 21%, 33% 26%, 25% 47%, 21% 54%, 23% 61%, 31% 81%, 32% 85%, 37% 86%, 48% 99%, 61% 83%, 62% 77%, 69% 56%, 60% 13%);}
+} 
+
+@keyframes CenterGalaxy {
+    0% {box-shadow: 0 0 0 0 #233272;}
+    100%{box-shadow: 0 0 0 200px #f0808001;}
+}
+
+@keyframes OuterCenterGalaxy {
+    0% {box-shadow: 0 0 0 0 #344ebe;}
+    100%{box-shadow: 0 0 0 300px #f0808001;}
+}
